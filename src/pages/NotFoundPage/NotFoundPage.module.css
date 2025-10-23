@@ -1,0 +1,24 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    background-color: #cfd8dc;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.header {
+    font-size: 2rem;
+    color: var(--secondary-blue);
+    font-weight: bold;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+    color: var(--moderate-blue);
+    font-weight: bold;
+}

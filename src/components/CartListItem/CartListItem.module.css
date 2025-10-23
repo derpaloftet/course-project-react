@@ -1,0 +1,11 @@
+.cartItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dish {
+    display: flex;
+    gap: 5px;
+    font-size: 1rem;
+}

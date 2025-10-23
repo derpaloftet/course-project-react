@@ -1,0 +1,10 @@
+@import "../App/variables.module.css";
+
+.footer {
+    background-color: #d5e3e8;
+    color: var(--secondary-blue);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 15px;
+}

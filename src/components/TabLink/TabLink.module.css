@@ -1,0 +1,32 @@
+@import "../App/variables.module.css";
+
+.root {
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.light {
+    background-color: #e3f2fd;
+    color: var(--primary-blue);
+}
+
+.dark {
+    background-color: #475569;
+    color: #64b5f6;
+}
+
+.isActive {
+    background-color: var(--primary-blue);
+    color: #fff;
+}

@@ -1,0 +1,6 @@
+@import "../App/variables.module.css";
+
+.root {
+    display: flex;
+    align-items: center;
+}

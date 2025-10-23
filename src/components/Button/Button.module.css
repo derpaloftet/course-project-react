@@ -1,0 +1,32 @@
+@import "../App/variables.module.css";
+
+.button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+}
+
+.light.default {
+    background-color: #e3f2fd;
+    color: var(--primary-blue);
+}
+
+.dark.default {
+    background-color: #475569;
+    color: #64b5f6;
+}
+
+.buttonRound {
+    padding: .5rem;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1rem;
+}

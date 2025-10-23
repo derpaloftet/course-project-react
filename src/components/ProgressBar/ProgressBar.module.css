@@ -1,0 +1,9 @@
+@import "../App/variables.module.css";
+
+.root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 15px;
+    background-color: var(--primary-blue);
+}

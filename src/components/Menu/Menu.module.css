@@ -1,0 +1,31 @@
+@import "../App/variables.module.css";
+
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 530px;
+}
+
+.menuHeader {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--secondary-blue);
+}
+
+.menuList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 15px;
+}
+
+.menuItem {
+    width: 100%;
+}

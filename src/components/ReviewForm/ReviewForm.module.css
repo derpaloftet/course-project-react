@@ -1,0 +1,46 @@
+@import "../App/variables.module.css";
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 530px;
+    margin-top: 15px;
+}
+
+.header {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--secondary-blue);
+}
+
+.reviewFields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.name {
+    margin-bottom: 10px;
+}
+
+.name input {
+    width: 200px;
+    height: 25px;
+}
+
+.review {
+    margin-bottom: 10px;
+}
+
+.review textarea {
+    resize: none;
+    width: 520px;
+    height: 60px;
+    margin-top: 10px;
+}

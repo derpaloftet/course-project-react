@@ -1,0 +1,24 @@
+@import "../App/variables.module.css";
+
+.header {
+    background-color: #d5e3e8;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 15px;
+}
+
+.section {
+    display: flex;
+    gap: 5px;
+}
+
+.appTitle {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--moderate-blue);
+    font-family: 'Lora', serif;
+}

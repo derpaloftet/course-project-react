@@ -1,0 +1,22 @@
+@import "../App/variables.module.css";
+
+.root {
+    margin-bottom: 10px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+}
+
+.user {
+    color: var(--moderate-blue);
+}
+
+.rating {
+    color: var(--moderate-blue);
+}
+
+.reviewText {
+    font-style: italic;
+}
