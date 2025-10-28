@@ -14,12 +14,12 @@ It includes:
 - **Dish Page**: Detailed view of a selected dish with ingredients and price
 - **Reviews Page**: Displays restaurant reviews
 - **Logged-In Users**:
-    - Can add dishes to cart from the Dish Page
-    - Can post reviews on the Reviews Page
+  - Can add dishes to cart from the Dish Page
+  - Can post reviews on the Reviews Page
 
 ## Technical Overview
 
-Food Delivery App is built using **React** and **Redux Toolkit** for state management, including **RTK Query**
+Food Delivery App is built using **React** and **Redux Toolkit** with **RTK Query** for state management
 
 ### App Structure:
 
@@ -33,11 +33,7 @@ Food Delivery App is built using **React** and **Redux Toolkit** for state manag
 - Persistent Header and Footer and Restaurant Tabs with route-based content changes using `Outlet`
 - `NavLink` for styled active states
 - Dynamic route parameters. For example: dish/:dishId
-- Fallback routes for unmatched paths
-
-**Node.js mock API server**: Simulates backend endpoints for restaurants, dishes, reviews, and users, using normalized data
-
-**Styled Components**: Handles CSS styling
+- Fallback route for unmatched paths
 
 **State Management and Hooks**:
 - `useState`: Manages local state in [ProgressBar](./src/components/ProgressBar/ProgressBar.jsx), theme context and user context
@@ -50,8 +46,8 @@ Food Delivery App is built using **React** and **Redux Toolkit** for state manag
 
 **Redux with Redux Toolkit**:
 - **Store**: Manages API state (via RTK Query) and global cart state
-- `api.reducer`: The [RTK Query API slice](./src/redux/services/api.js) handles caching, refetching, and tag-based invalidation (`reviews` tag)
-- `cartSlice`: Contains reducers and selectors for adding/removing dishes
+- `api.reducer`: The [RTK Query API slice](./src/redux/services/api.js) handles caching, refetching, and tag-based invalidation (using `reviews` tag)
+- `cartSlice`: Contains reducers and selectors for adding/removing items from the cart
 - `useQuery` hooks: Fetch and read data from the API/store. Example: [useGetRestaurantsQuery() ](./src/pages/RestaurantsPage/RestaurantsPage.jsx)
 - `useMutation` hook: Handles the POST request for adding reviews - [useAddReviewMutation()](./src/components/Restaurant/Restaurant-container.jsx)
 - `useSelector` Extracts data from the Redux store for components. Example: [Cart](./src/components/Cart/Cart.jsx)
@@ -59,6 +55,10 @@ Food Delivery App is built using **React** and **Redux Toolkit** for state manag
 **Additional Functionality**:
 - **Theme Switcher**: Toggles between light and dark modes
 - **ProgressBar**: Gives visual feedback during scroll
+
+**Styled Components**: Handles CSS styling
+
+**Node.js mock API server**: Simulates backend endpoints for restaurants, dishes, reviews, and users, using normalized data
 
 **Developer Tools**:
 - **ESLint**: Ensures clean, consistent code
