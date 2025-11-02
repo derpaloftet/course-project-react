@@ -1,0 +1,29 @@
+version: 2.1
+
+executors:
+  node_image:
+    docker:
+      - image: cimg/node:22.13.1-browsers
+
+orbs:
+  browser-tools: circleci/browser-tools@2.3.1
+
+jobs:
+  build:
+    executor: node_image
+    steps:
+      - checkout
+      - run:
+          command: npm install
+      - run:
+          command: npm run lint
+      - run:
+          command: npm run build
+      - browser-tools/install_chrome:
+          timeout: 2m
+      - run:
+          command: npm run lhci
+workflows:
+  build:
+    jobs:
+      - build
