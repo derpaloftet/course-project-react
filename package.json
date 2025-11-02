@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "preview": "vite preview",
-    "start-server": "node simple_api/server.js"
+    "start-server": "node simple_api/server.js",
+    "lhci": "lhci autorun"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
