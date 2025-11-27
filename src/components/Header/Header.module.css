@@ -1,7 +1,6 @@
 @import "../App/variables.module.css";
 
 .header {
-    background-color: #d5e3e8;
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -21,4 +20,12 @@
     font-weight: bold;
     color: var(--moderate-blue);
     font-family: 'Lora', serif;
+    text-decoration: none;
+}
+
+.light {
+    background-color: var(--light-blue);
+}
+.dark {
+    background-color: var(--dark-blue);
 }

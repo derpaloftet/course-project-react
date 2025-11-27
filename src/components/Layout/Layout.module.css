@@ -15,5 +15,6 @@
 }
 
 .aside {
-    align-self: center;
+    align-self: end;
+    margin-right: 20px;
 }
